@@ -2,505 +2,1055 @@
   .curso-main-container.pb-3
     BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-      // Para cuestionario usar: <ActividadController :cuestionario="cuestionario"/>
-      // Para parrafo usar: <ActividadController :parrafo="parrafo"/>
+  
       #Actividad                
-      <ActividadController :cuestionario="cuestionario"/>
+        <Actividad :cuestionario="cuestionario"/>
   
   </template>
 
 <script>
-import ActividadController from '@ecored-sena/boulder-kit/plugin/components/actividad/ActividadController.vue'
-
+import Actividad from 'ecored-pkg-fliz/plugin/components/actividad/Actividad.vue'
 export default {
   name: 'ActividadDidactica',
   components: {
-    ActividadController,
+    Actividad,
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Reto operativo: domina los procedimientos de reservas',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b>Objetivo:</b> evaluar la comprensión del aprendiz de los conceptos clave relacionados con usuarios turísticos, servicio al cliente, comunicación, negociación, cotización y venta.',
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
       preguntas: [
         {
           id: 1,
-          texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+
+          texto: '¿Cuál es una característica de un canal directo de reservas?',
+
+          imagen: require('@/assets/actividad/imagen1.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+
+              texto: 'Permite reservar únicamente mediante agencias de viajes.',
+
               esCorrecta: false,
             },
+
             {
               id: 'b',
+
               texto:
-                'Seleccionar y editar capas que identifican márgenes, pistas y componentes.',
+                'Facilita el contacto directo entre el cliente y el establecimiento.',
+
               esCorrecta: true,
             },
+
             {
               id: 'c',
-              texto: 'Ajustar automáticamente las pistas de cada componente.',
+
+              texto: 'Solo puede utilizarse para reservas grupales.',
+
               esCorrecta: false,
             },
+
             {
               id: 'd',
-              texto: 'Modificar el tamaño de los componentes.',
+
+              texto: 'Requiere siempre la intervención de una OTA.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
           mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 2,
+
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Cuál es el propósito principal de una <em>waiting list</em>?',
+
+          imagen: require('@/assets/actividad/imagen1.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+
+              texto: 'Confirmar reservas corporativas.',
+
               esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: '<em>Auto</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: '<em>Text</em>',
+
+              texto:
+                'Registrar solicitudes cuando no hay disponibilidad inmediata.',
+
               esCorrecta: true,
             },
+
+            {
+              id: 'c',
+
+              texto: 'Gestionar únicamente cancelaciones.',
+
+              esCorrecta: false,
+            },
+
             {
               id: 'd',
-              texto: '<em>Route</em>',
+
+              texto: 'Clasificar huéspedes VIP.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
+
+          texto:
+            '¿Para qué se utiliza el <em>forecasting</em> en el área de reservas?',
+
+          imagen: require('@/assets/actividad/imagen1.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Para borrar conexiones.',
+
+              texto: 'Registrar pagos pendientes.',
+
               esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto:
-                'Para cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+
+              texto: 'Calcular tarifas promocionales.',
+
               esCorrecta: false,
             },
+
             {
               id: 'c',
-              texto: 'Para agregar nuevas capas.',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'Para resaltar conexiones de pines.',
+
+              texto: 'Estimar la ocupación futura del establecimiento.',
+
               esCorrecta: true,
             },
+
+            {
+              id: 'd',
+
+              texto: 'Organizar el servicio de habitaciones.',
+
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 4,
+
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Qué describe correctamente el concepto de <em>overbooking</em>?',
+
+          imagen: require('@/assets/actividad/imagen1.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: '<em>Text</em>',
+
+              texto: 'Bloquear habitaciones por mantenimiento.',
+
               esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: '<em>Layer</em>',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: '<em>Board</em>',
+
+              texto: 'Aceptar más reservas que habitaciones disponibles.',
+
               esCorrecta: true,
             },
+
+            {
+              id: 'c',
+
+              texto: 'Cancelar reservas duplicadas.',
+
+              esCorrecta: false,
+            },
+
             {
               id: 'd',
-              texto: '<em>Route</em>',
+
+              texto: 'Asignar habitaciones preferenciales.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+
+          texto: '¿Qué caracteriza una reserva garantizada?',
+
+          imagen: require('@/assets/actividad/imagen1.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto:
-                'Enrutar manualmente las pistas que no se ajustaron automáticamente.',
-              esCorrecta: true,
+
+              texto: 'Puede cancelarse sin condiciones.',
+
+              esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Resaltar las conexiones de los pines.',
-              esCorrecta: false,
+
+              texto: 'Cuenta con un respaldo económico o financiero.',
+
+              esCorrecta: true,
             },
+
             {
               id: 'c',
-              texto: 'Crear una nueva capa en el diseño.',
+
+              texto: 'Solo aplica para huéspedes frecuentes.',
+
               esCorrecta: false,
             },
+
             {
               id: 'd',
-              texto:
-                'Cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+
+              texto: 'No requiere confirmación.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 6,
+
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué función cumple un sistema PMS en la gestión de reservas?',
+
+          imagen: require('@/assets/actividad/imagen2.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Borrar componentes.',
+
+              texto: 'Diseñar campañas publicitarias.',
+
               esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Ajustar automáticamente las pistas en cada componente.',
-              esCorrecta: true,
-            },
-            {
-              id: 'c',
-              texto: 'Crear nuevas conexiones de pines.',
+
+              texto: 'Gestionar únicamente el servicio de restaurante.',
+
               esCorrecta: false,
             },
+
+            {
+              id: 'c',
+
+              texto: 'Administrar la información y operación de las reservas.',
+
+              esCorrecta: true,
+            },
+
             {
               id: 'd',
-              texto: 'Seleccionar y editar capas.',
+
+              texto: 'Elaborar contratos laborales.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 7,
+
           texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿En qué situación se utiliza principalmente un <em>rooming list</em>?',
+
+          imagen: require('@/assets/actividad/imagen3.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Colocar los componentes en un solo bloque.',
+
+              texto: 'En reservas individuales.',
+
               esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Agrupar los componentes en bloques funcionales.',
+
+              texto: 'En reservas para grupos de huéspedes.',
+
               esCorrecta: true,
             },
+
             {
               id: 'c',
-              texto: 'Alinear todos los terminales a la derecha.',
+
+              texto: 'En reservas canceladas.',
+
               esCorrecta: false,
             },
+
             {
               id: 'd',
-              texto: 'Colocar los terminales lo más alejados posible.',
+
+              texto: 'En solicitudes de mantenimiento.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 8,
+
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Por qué es importante informar las políticas de cancelación al cliente?',
+
+          imagen: require('@/assets/actividad/imagen4.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
+
+              texto: 'Porque reemplazan el contrato de hospedaje.',
+
               esCorrecta: false,
             },
+
+            {
+              id: 'b',
+
+              texto: 'Porque eliminan cualquier responsabilidad del hotel.',
+
+              esCorrecta: false,
+            },
+
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+
+              texto:
+                'Porque permiten conocer las condiciones aplicables a la reserva.',
+
+              esCorrecta: true,
             },
+
             {
               id: 'd',
-              texto: 'bValues',
+
+              texto: 'Porque únicamente benefician al establecimiento.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 9,
-          texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
+
+          texto: '¿Qué son las OTA (<em>Online Travel Agencies</em>)?',
+
+          imagen: require('@/assets/actividad/imagen1.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+
+              texto: 'Empresas encargadas del transporte terrestre.',
+
               esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Falso',
+
+              texto: 'Plataformas de pago electrónico.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'c',
+
+              texto:
+                'Agencias de viajes en línea que comercializan servicios turísticos.',
+
               esCorrecta: true,
             },
+
+            {
+              id: 'd',
+
+              texto: 'Sistemas internos de mantenimiento hotelero.',
+
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 10,
-          texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
+
+          texto: '¿Cuál puede ser una causa de la anulación de una reserva?',
+
+          imagen: require('@/assets/actividad/imagen2.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+
+              texto: 'El registro del huésped.',
+
+              esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Falso',
+
+              texto: 'El pago anticipado.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'c',
+
+              texto: 'Errores o inconsistencias detectadas en el sistema.',
+
+              esCorrecta: true,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'La asignación de habitación.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 11,
-          texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
+
+          texto: '¿Qué ocurre en un caso de <em>no show</em>?',
+
+          imagen: require('@/assets/actividad/imagen3.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+
+              texto: 'El huésped modifica su reserva.',
+
               esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Falso',
+
+              texto:
+                'El huésped no se presenta en la fecha prevista sin cancelar previamente.',
+
               esCorrecta: true,
             },
+
+            {
+              id: 'c',
+
+              texto: 'El establecimiento cambia la tarifa.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'El huésped solicita una habitación diferente.',
+
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 12,
-          texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
-          imagen: '@/assets/actividad/imagen3.png',
+
+          texto: '¿Cuál es la función principal de los códigos IATA?',
+
+          imagen: require('@/assets/actividad/imagen4.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+
+              texto: 'Clasificar hoteles por categoría.',
+
+              esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Falso',
+
+              texto:
+                'Identificar aeropuertos y ciudades mediante códigos estandarizados.',
+
+              esCorrecta: true,
+            },
+
+            {
+              id: 'c',
+
+              texto: 'Codificar habitaciones.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'Asignar tarifas hoteleras.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 13,
-          texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+
+          texto: '¿Qué caracteriza una reserva provisional?',
+
+          imagen: require('@/assets/actividad/imagen1.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+
+              texto: 'Está completamente garantizada.',
+
+              esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Falso',
+
+              texto:
+                'Requiere una confirmación posterior para hacerse efectiva.',
+
+              esCorrecta: true,
+            },
+
+            {
+              id: 'c',
+
+              texto: 'No puede modificarse.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'Solo aplica para agencias.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 14,
+
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
-          imagen: '@/assets/actividad/imagen4.png',
+            '¿Cuál de las siguientes actividades hace parte del tratamiento de una reserva?',
+
+          imagen: require('@/assets/actividad/imagen2.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+
+              texto: 'Diseñar promociones comerciales.',
+
               esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Falso',
+
+              texto: 'Elaborar presupuestos contables.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'c',
+
+              texto:
+                'Registrar, confirmar y hacer seguimiento a la información del huésped.',
+
               esCorrecta: true,
             },
+
+            {
+              id: 'd',
+
+              texto: 'Realizar mantenimiento preventivo.',
+
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
+
         {
           id: 15,
-          texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+
+          texto: '¿Cuál es uno de los beneficios de las garantías de reserva?',
+
+          imagen: require('@/assets/actividad/imagen3.png'),
+
           barajarRespuestas: true,
+
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+
+              texto: 'Eliminar la necesidad de confirmar reservas.',
+
+              esCorrecta: false,
             },
+
             {
               id: 'b',
-              texto: 'Falso',
+
+              texto:
+                'Reducir pérdidas económicas ocasionadas por cancelaciones o <em>no show</em>.',
+
+              esCorrecta: true,
+            },
+
+            {
+              id: 'c',
+
+              texto: 'Incrementar el número de habitaciones.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'Sustituir las políticas de cancelación.',
+
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
+        },
+
+        {
+          id: 16,
+
+          texto: '¿Qué información es indispensable al registrar una reserva?',
+
+          imagen: require('@/assets/actividad/imagen4.png'),
+
+          barajarRespuestas: true,
+
+          opciones: [
+            {
+              id: 'a',
+
+              texto: 'Solo el nombre del hotel.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'b',
+
+              texto: 'Únicamente la tarifa.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'c',
+
+              texto:
+                'Datos del huésped, fechas y tipo de habitación solicitada.',
+
+              esCorrecta: true,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'El historial laboral del cliente.',
+
+              esCorrecta: false,
+            },
+          ],
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
+        },
+
+        {
+          id: 17,
+
+          texto:
+            '¿Qué acción debe realizarse después de registrar correctamente una reserva?',
+
+          imagen: require('@/assets/actividad/imagen1.png'),
+
+          barajarRespuestas: true,
+
+          opciones: [
+            {
+              id: 'a',
+
+              texto: 'Eliminar los datos del huésped.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'b',
+
+              texto: 'Confirmar la reserva utilizando el canal establecido.',
+
+              esCorrecta: true,
+            },
+
+            {
+              id: 'c',
+
+              texto: 'Asignar automáticamente cualquier habitación.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'Esperar la llegada del cliente sin realizar seguimiento.',
+
+              esCorrecta: false,
+            },
+          ],
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
+        },
+
+        {
+          id: 18,
+
+          texto:
+            '¿Cuál es el principal objetivo de una adecuada gestión de reservas?',
+
+          imagen: require('@/assets/actividad/imagen2.png'),
+
+          barajarRespuestas: true,
+
+          opciones: [
+            {
+              id: 'a',
+
+              texto: 'Reducir el número de huéspedes.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'b',
+
+              texto:
+                'Optimizar la ocupación y garantizar un servicio organizado.',
+
+              esCorrecta: true,
+            },
+
+            {
+              id: 'c',
+
+              texto: 'Incrementar las cancelaciones.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'Limitar las ventas en línea.',
+
+              esCorrecta: false,
+            },
+          ],
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
+        },
+
+        {
+          id: 19,
+
+          texto:
+            '¿Qué ventaja ofrece mantener actualizada la información de las reservas?',
+
+          imagen: require('@/assets/actividad/imagen3.png'),
+
+          barajarRespuestas: true,
+
+          opciones: [
+            {
+              id: 'a',
+
+              texto: 'Disminuir la comunicación con el huésped.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'b',
+
+              texto: 'Evitar el uso de sistemas tecnológicos.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'c',
+
+              texto: 'Facilitar el seguimiento y reducir errores operativos.',
+
+              esCorrecta: true,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'Incrementar el tiempo de respuesta.',
+
+              esCorrecta: false,
+            },
+          ],
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
+        },
+
+        {
+          id: 20,
+
+          texto:
+            '¿Cuál es una buena práctica al gestionar una solicitud de reserva?',
+
+          imagen: require('@/assets/actividad/imagen4.png'),
+
+          barajarRespuestas: true,
+
+          opciones: [
+            {
+              id: 'a',
+
+              texto: 'Omitir las condiciones del servicio.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'b',
+
+              texto: 'Registrar únicamente el nombre del cliente.',
+
+              esCorrecta: false,
+            },
+
+            {
+              id: 'c',
+
+              texto:
+                'Verificar la disponibilidad antes de confirmar la reserva.',
+
+              esCorrecta: true,
+            },
+
+            {
+              id: 'd',
+
+              texto: 'Confirmar la reserva sin revisar la información.',
+
+              esCorrecta: false,
+            },
+          ],
+
+          mensaje_correcto:
+            'Excelente trabajo. Tiene un claro entendimiento sobre el tema.',
+
+          mensaje_incorrecto:
+            'Respuesta incorrecta, revise nuevamente el contenido del componente formativo.',
         },
       ],
-      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
+      mensaje_final_aprobado:
+        '¡Excelente! Ha superado la actividad y demuestra sólidos conocimientos sobre el componente formativo.',
       mensaje_final_reprobado:
-        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
-    },
-    parrafo: {
-      tema: 'Comprendiendo el diseño de presupuestos y estrategias de ahorro',
-      titulo: 'Completar frases',
-      introduccion:
-        '<b> Objetivo:</b> identificar conceptos clave relacionados con el presupuesto personal, la cultura del ahorro y la planificación financiera.',
-      instruccion:
-        'Complete correctamente los enunciados con la palabra que falta según los contenidos estudiados en el componente formativo.',
-      imagen: '@/assets/actividad/imagen1.png',
-      barajarPreguntas: true,
-      textos: [
-        {
-          id: 1,
-          texto:
-            'El [respuesta] personal es una herramienta que permite proyectar ingresos y egresos para mantener la estabilidad económica.',
-          respuesta: 'presupuesto',
-        },
-        {
-          id: 2,
-          texto:
-            'La constancia en el cumplimiento del presupuesto refleja un alto nivel de [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 3,
-          texto:
-            'Ahorrar no es lo que sobra, sino lo que se [respuesta] guardar antes de gastar.',
-          respuesta: 'planifica',
-        },
-        {
-          id: 4,
-          texto:
-            'Un gasto innecesario que puede eliminarse sin afectar la calidad de vida básica se denomina gasto [respuesta].',
-          respuesta: 'discrecional',
-        },
-        {
-          id: 5,
-          texto:
-            'La cultura del ahorro promueve el uso responsable de los [respuesta] disponibles.',
-          respuesta: 'recursos',
-        },
-        {
-          id: 6,
-          texto:
-            'El estado de [respuesta] personales permite analizar la relación entre ingresos y egresos en un periodo determinado.',
-          respuesta: 'resultados',
-        },
-        {
-          id: 7,
-          texto:
-            'Cuando los ingresos son mayores que los egresos se generan una [respuesta] que puede destinarse al ahorro.',
-          respuesta: 'utilidad',
-        },
-        {
-          id: 8,
-          texto:
-            'Uno de los beneficios de ejecutar un presupuesto es la reducción del [respuesta] financiero.',
-          respuesta: 'estrés',
-        },
-        {
-          id: 9,
-          texto:
-            'Evitar gastos impulsivos y mantener límites presupuestales refleja [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 10,
-          texto:
-            'Contar con un fondo de [respuesta] permite enfrentar gastos inesperados sin afectar el presupuesto.',
-          respuesta: 'emergencia',
-        },
-      ],
+        'No ha superado la actividad. Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
     },
   }),
 }

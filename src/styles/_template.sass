@@ -1,6 +1,4 @@
-@use 'variables' as *
 .app
-  display: block
 
 .contenedor-principal
   display: flex
@@ -9,8 +7,9 @@
 .seccion-principal
   width: 100%
 
-  .curso-main-container
-    padding-bottom: 80px
+  &--barra-avance-open
+    .curso-main-container
+      padding-bottom: 80px !important
   
 .insignia
   display: inline-block

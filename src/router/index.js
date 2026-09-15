@@ -1,12 +1,15 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import Inicio from '@ecored-sena/boulder-kit/plugin/components/Inicio.vue'
-import Curso from '@ecored-sena/boulder-kit/plugin/components/plantilla/Curso.vue'
-import Glosario from '@ecored-sena/boulder-kit/plugin/components/Glosario.vue'
-import Referencias from '@ecored-sena/boulder-kit/plugin/components/Referencias.vue'
-import Creditos from '@ecored-sena/boulder-kit/plugin/components/Creditos.vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Inicio from 'ecored-pkg-fliz/plugin/components/Inicio.vue'
+import Curso from 'ecored-pkg-fliz/plugin/components/plantilla/Curso.vue'
+import Glosario from 'ecored-pkg-fliz/plugin/components/Glosario.vue'
+import Referencias from 'ecored-pkg-fliz/plugin/components/Referencias.vue'
+import Creditos from 'ecored-pkg-fliz/plugin/components/Creditos.vue'
+import Complementario from 'ecored-pkg-fliz/plugin/components/Complementario.vue'
 
-const router = createRouter({
-  history: createWebHashHistory(),
+Vue.use(VueRouter)
+
+const router = new VueRouter({
   routes: [
     {
       path: '/',
@@ -51,12 +54,6 @@ const router = createRouter({
           component: () =>
             import(/* webpackChunkName: "tema4" */ '../views/Tema4.vue'),
         },
-        {
-          path: 'tema5',
-          name: 'tema5',
-          component: () =>
-            import(/* webpackChunkName: "tema5" */ '../views/Tema5.vue'),
-        },
       ],
     },
     {
@@ -69,6 +66,11 @@ const router = createRouter({
       path: '/glosario',
       name: 'glosario',
       component: Glosario,
+    },
+    {
+      path: '/complementario',
+      name: 'complementario',
+      component: Complementario,
     },
     {
       path: '/referencias',
@@ -87,53 +89,31 @@ const router = createRouter({
       component: Creditos,
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    }
+  scrollBehavior(to, from) {
     if (to.hash) {
-      const HEADER_OFFSET = 100
-
-      return new Promise((resolve) => {
-        let timer = null
-        const performScroll = () => {
-          cleanup()
-
-          let targetEl = null
-          try {
-            targetEl = document.querySelector(to.hash)
-          } catch {
-            targetEl = document.getElementById(to.hash.replace('#', ''))
-          }
-
-          if (!targetEl) {
-            return resolve({ top: 0 })
-          }
-
-          const top =
-            targetEl.getBoundingClientRect().top +
-            window.scrollY -
-            HEADER_OFFSET
-          resolve({ top, behavior: 'smooth' })
-        }
-
-        const cleanup = () => {
-          if (observer) observer.disconnect()
-          if (timer) clearTimeout(timer)
-        }
-
-        const observer = new ResizeObserver(() => {
-          if (timer) clearTimeout(timer)
-          timer = setTimeout(performScroll, 60)
+      const newRoute = {
+        selector: to.hash,
+        offset: { y: 100 },
+        behavior: 'smooth',
+      }
+      if (to.name === from.name) {
+        return newRoute
+      } else {
+        return new Promise(resolve => {
+          setTimeout(() => {
+            resolve(newRoute)
+          }, 500)
         })
-        observer.observe(document.body)
-        setTimeout(() => {
-          cleanup()
-          performScroll()
-        }, 500)
-      })
+      }
+    } else {
+      setTimeout(() => {
+        window.scrollTo({
+          left: 0,
+          top: 0,
+          behavior: 'auto',
+        })
+      }, 100)
     }
-    return { top: 0 }
   },
 })
 

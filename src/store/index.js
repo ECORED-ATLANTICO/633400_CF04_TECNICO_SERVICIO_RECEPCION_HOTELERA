@@ -1,13 +1,16 @@
-import { createStore } from 'vuex'
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-export default createStore({
+Vue.use(Vuex)
+
+export default new Vuex.Store({
   state: {
     loading: 0,
     menuOpen: false,
   },
   getters: {
-    isLoading: (state) => !!state.loading,
-    isMenuOpen: (state) => state.menuOpen,
+    isLoading: state => !!state.loading,
+    isMenuOpen: state => state.menuOpen,
   },
   mutations: {
     toggleMenu(state, newVal) {

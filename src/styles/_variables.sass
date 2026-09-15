@@ -1,23 +1,20 @@
-@use 'sass:math'
-@use 'sass:color'
 // -----------------------------------------------------
 // COLORES ---------------------------------------------
 // -----------------------------------------------------
-  
+
 // Colores genericos -----------------------------------
 
 $black: #000
-$darkest-gray: color.adjust($black, $lightness: 10%)
-$darker-gray: color.adjust($black, $lightness: 20%)
-$darken-gray: color.adjust($black, $lightness: 30%)
-$dark-gray: color.adjust($black, $lightness: 40%)
-$gray: color.adjust($black, $lightness: 50%)
-$light-gray: color.adjust($black, $lightness: 60%)
-$lighten-gray: color.adjust($black, $lightness: 70%)
-$lighter-gray: color.adjust($black, $lightness: 80%)
-$lightest-gray: color.adjust($black, $lightness: 90%)
+$darkest-gray: lighten($black, 10%)
+$darker-gray: lighten($black, 20%)
+$darken-gray: lighten($black, 30%)
+$dark-gray: lighten($black, 40%)
+$gray: lighten($black, 50%)
+$light-gray: lighten($black, 60%)
+$lighten-gray: lighten($black, 70%)
+$lighter-gray: lighten($black, 80%)
+$lightest-gray: lighten($black, 90%)
 $white: #fff
-
 
 $red: #F44336
 $deep-orange: #FF5722
@@ -53,14 +50,13 @@ $color-sistema-h: #F6F6F6
 
 $color-institucional: #39A900
 
-
 // Colores Curso ---------------------------------------
 
-$color-primario: #88dff5
-$color-secundario: #ba59e7
-$color-acento-contenido: #FF4A69
-$color-acento-botones: #39A900
-$color-adicional-1: #CDDC39
+$color-primario: #B8DCF3
+$color-secundario: #B3C867
+$color-acento-contenido: #2EBDE1
+$color-acento-botones: #C5A07A
+$color-adicional-1: #FEC190
 $color-adicional-2: #00BCD4
 
 // Color Tipografias -----------------------------------
@@ -73,15 +69,15 @@ $color-etiqueta-texto: $white
 
 //color Links ------------------------------------------
 $color-link: $color-sistema-texto
-$color-link-hover: color.adjust($blue, $lightness: -15%) 
+$color-link-hover: darken($color-sistema-texto, 25%)
 
 // Color Botones ---------------------------------------
 $color-btn-fondo: $color-acento-botones
 $color-btn-texto: $color-sistema-texto
 
 // Colores banner --------------------------------------
-$color-banner-fondo: $color-primario
-$color-banner-text: $white
+$color-banner-fondo: #A7D6E3
+$color-banner-text: $color-sistema-texto
 
 // Colores anexos
 $color-fondo-anexo: $color-sistema-g
@@ -92,10 +88,10 @@ $selection-color: $blue !important
 $selection-font-color: $white !important
 
 // Colores y estados de validacion
-$color-success: color.adjust($green, $lightness: 10%)
-$color-info: color.adjust($light-blue, $lightness: 15%)
-$color-warning: color.adjust($yellow, $lightness: 15%)
-$color-danger: color.adjust($red, $saturation: -15%)
+$color-success: lighten($green, 10%)
+$color-info: lighten($light-blue, 15%)
+$color-warning: lighten($yellow, 15%)
+$color-danger: desaturate($red, 15%)
 
 // -----------------------------------------------------
 // TIPOGRAFIAS -----------------------------------------
@@ -138,14 +134,13 @@ $label-font-size: 1em
 $label-font-family: $base-font-family
 $label-font-weight: $heading-font-weight
 
-
 // -----------------------------------------------------
 // OTROS TAMAÑOS ---------------------------------------
 // -----------------------------------------------------
 
 $base-border-radius: 5px
 $base-spacing: $base-line-height * 1em
-$small-spacing: math.div($base-spacing, 2)
+$small-spacing: $base-spacing / 2
 $big-spacing: $base-spacing * 2
 $base-z-index: 0
 
@@ -157,7 +152,7 @@ $base-border: 1px solid $base-border-color
 $placeholder-color: $light-gray
 $form-background-color: white
 $form-box-shadow: inset 0 1px 3px rgba($black, 0.06)
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px color.adjust($color-primario, $lightness: -5%, $alpha: -0.3)
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($color-primario, $lightness: -5%, $alpha: -0.3)
 
 // Tables ----------------------------------------------
 $table-header-bg-color: $color-sistema-f
@@ -184,15 +179,14 @@ $bp-max-xs: 576px
 // COMPONENTES -----------------------------------------
 // -----------------------------------------------------
 .actividad
-  background-color: #F2F2F2  
+  background-color: #F2F2F2
 // Imágen banner principal -----------------------------
-$banner-principal-img-y: '' // 'arriba','abajo',''
+$banner-principal-img-y: 'abajo' // 'arriba','abajo',''
 $banner-principal-img-x: '' // 'derecha',''
 
 // .tarjeta-avatar -----------------------------------
 $tarjeta-avatar-b-ancho-img: 20%
 $tarjeta-avatar-ancho-img: 150px
-
 
 // -----------------------------------------------------
 // VARIABLES DE COMPATIBILIDAD -------------------------

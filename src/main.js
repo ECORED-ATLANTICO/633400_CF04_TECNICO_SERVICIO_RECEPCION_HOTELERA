@@ -1,15 +1,18 @@
-import { createApp } from 'vue'
+import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store/index.js'
-import legoRedPlugin from '@ecored-sena/boulder-kit'
+import ecored from 'ecored-pkg-fliz'
+
 import config from './config/global.js'
-import packageJson from '../package.json'
+const packageJson = require('../package.json')
+
+Vue.use(ecored, { config, packageJson })
 
 import './styles/_styles.sass'
 
-const app = createApp(App)
-app.use(router)
-app.use(store)
-app.use(legoRedPlugin, { config, packageJson })
-app.mount('#app')
+new Vue({
+  router,
+  store,
+  render: h => h(App),
+}).$mount('#app')

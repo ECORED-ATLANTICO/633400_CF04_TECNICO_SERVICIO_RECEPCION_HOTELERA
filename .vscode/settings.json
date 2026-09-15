@@ -4,5 +4,4 @@
     "source.fixAll": "explicit"
   },
   "eslint.run": "onSave",
-  "editor.wordWrap": "on"
 }

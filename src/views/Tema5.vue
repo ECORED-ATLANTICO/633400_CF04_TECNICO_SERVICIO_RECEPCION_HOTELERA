@@ -7,6 +7,7 @@
         span 5
       h1 Tema 5
 
+
 </template>
 
 <script>
@@ -15,6 +16,14 @@ export default {
   data: () => ({
     // variables de vue
   }),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
 }
 </script>
 
