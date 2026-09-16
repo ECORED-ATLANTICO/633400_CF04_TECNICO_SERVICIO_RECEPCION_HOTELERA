@@ -353,8 +353,7 @@
                   p.mb-0 Para profundizar en los diferentes tipos de reservas hoteleras, lo invitamos a consultar el siguiente video:
             .col-lg-2.col-md-12(style="text-align: center !important;")
               a.boton.color-acento-botones(href="https://youtu.be/WhV3jC4u880" target="_blank", style="text-align: center !important;")
-                span Consultar video
-                i.fas.fa-play
+                span Ir al recurso
 
     separador
     
