@@ -184,7 +184,7 @@ export default {
       {
         icono: 'fas fa-file-pdf',
         titulo: 'Descargar PDF',
-        download: 'downloads/621602_CF04_DU.pdf',
+        download: 'downloads/633400_CF04_CFA.pdf',
       },
       {
         icono: 'fas fa-download',
@@ -220,7 +220,7 @@ export default {
     {
       termino: '<em>Booking engine</em>',
       significado:
-        'Motor de reservas integrado a páginas web que permite realizar reservas online.',
+        'Motor de reservas integrado a páginas web que permite realizar reservas <em>online</em>.',
     },
     {
       termino: 'Canal de reserva',
@@ -268,7 +268,7 @@ export default {
         'Respaldo económico que asegura la disponibilidad de la habitación para el huésped.',
     },
     {
-      termino: 'GDS (Global Distribution System)',
+      termino: 'GDS (<em>Global Distribution System</em>)',
       significado:
         'Sistema global de distribución utilizado para comercializar servicios turísticos y hoteleros.',
     },
@@ -369,6 +369,11 @@ export default {
     },
     {
       referencia:
+        'Códigos IATA. (17 de diciembre de 2015). Agencia de Viajes I.',
+      link: 'http://av1germainebatson.blogspot.com/2015/12/codigos-iata.html',
+    },
+    {
+      referencia:
         'Duran, W. (2018, mayo, 9). Tarifas dinámicas en hoteles, tendencia que ya existe en los viajes de negocios. [Publicación en perfil]. Linkedin.',
     },
     {
@@ -391,7 +396,7 @@ export default {
     },
     {
       referencia:
-        'Marrero, F. J. (2016, Noviembre 1). Glosario de términos hoteleros, turísticos y relacionados. Obtenido de Hosteltur.',
+        'Marrero, F. J. (2016, Noviembre 1). Glosario de términos hoteleros, turísticos y relacionados. Obtenido de Hosteltur:',
       link: 'https://www.hosteltur.com/files/web/templates/term/wikitur.pdf',
     },
     {
@@ -411,11 +416,6 @@ export default {
     {
       referencia:
         'Soler, J. R. (2.000). Técnicas de Gestión y Dirección Hotelera. Barcelona: Ediciones Gestión 2.000 S.A.',
-    },
-    {
-      referencia:
-        'Códigos IATA. (17 de diciembre de 2015). Códigos IATA. [Web log post]. Agencia de Viajes I.',
-      link: 'http://av1germainebatson.blogspot.com/2015/12/codigos-iata.html',
     },
   ],
   creditos: [
@@ -440,7 +440,7 @@ export default {
       autores: [
         {
           nombre: 'Amparo Virginia Moreno Cantero',
-          cargo: 'Experto temático',
+          cargo: 'Experta temática',
           centro:
             'Centro de Servicios y Gestión Empresarial - Regional Antioquia',
         },
@@ -451,7 +451,7 @@ export default {
         },
         {
           nombre: 'María Fernanda Morales Angulo',
-          cargo: 'Evaluador instruccional',
+          cargo: 'Evaluadora instruccional',
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
         },
       ],
@@ -461,7 +461,7 @@ export default {
       autores: [
         {
           nombre: 'Carmen Alicia Martínez Torres',
-          cargo: 'Diseñador web',
+          cargo: 'Diseñadora web',
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
         },
         {
@@ -481,12 +481,12 @@ export default {
       autores: [
         {
           nombre: 'Luz Karime Amaya Cabra',
-          cargo: 'Evaluador de contenidos inclusivos y accesibles',
+          cargo: 'Evaluadora de contenidos inclusivos y accesibles',
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
         },
         {
           nombre: 'Laura Daniela Burgos Rueda',
-          cargo: 'Evaluador de contenidos inclusivos y accesibles',
+          cargo: 'Evaluadora de contenidos inclusivos y accesibles',
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
         },
         {
@@ -496,7 +496,7 @@ export default {
         },
         {
           nombre: 'Karine Isabel Ospino Fritz',
-          cargo: 'Validador y vinculador de recursos educativos digitales',
+          cargo: 'Validadora y vinculadora de recursos educativos digitales',
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
         },
       ],

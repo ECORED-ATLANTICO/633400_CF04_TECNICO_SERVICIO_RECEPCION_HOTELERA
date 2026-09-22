@@ -11,7 +11,7 @@
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-3.col-md-8.mb-4.mb-lg-0
         figure
-          img(src="@/assets/curso/tema1/img01.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema1/img01.png", data-aos="zoom-in", alt="")
       .col-lg-9
         p.mb-0(data-aos="fade-right") La gestión de reservas constituye uno de los procesos más importantes dentro de la operación hotelera, debido a que permite controlar la ocupación, organizar la disponibilidad de habitaciones y facilitar la comercialización de los servicios del establecimiento. En la actualidad, los hoteles utilizan diferentes canales y sistemas tecnológicos para recibir y administrar reservas, respondiendo a las dinámicas del mercado turístico y a las nuevas formas de consumo de los clientes. Según Kotler, Bowen y Makens (2017), la transformación digital del sector hotelero ha fortalecido el uso de plataformas tecnológicas y canales de distribución que permiten ampliar el alcance comercial y mejorar la experiencia del huésped. En este contexto, resulta fundamental comprender cómo funcionan los canales de reserva, sus tipos, ventajas y limitaciones, así como la clasificación y codificación de las reservas dentro de los sistemas de gestión hotelera.
 
@@ -25,19 +25,19 @@
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-3.col-md-8.mb-4.mb-lg-0
         figure
-          img(src="@/assets/curso/tema1/img02.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema1/img02.png", data-aos="zoom-in", alt="")
       .col-lg-9.col-md-12
         .row.align-items-center.mb-4
           .col-lg-auto.d-none.d-lg-block
             figure
-              img(src="@/assets/curso/tema1/img03.svg", style="max-width: 100px").mx-auto
+              img(src="@/assets/curso/tema1/img03.svg", style="max-width: 100px", alt="").mx-auto
           .col-lg
             p.mb-0(data-aos="fade-right") Tradicionalmente, las reservas hoteleras se realizaban de manera presencial o telefónica; sin embargo, el desarrollo tecnológico y la expansión del comercio electrónico han permitido la aparición de nuevos canales digitales que facilitan la comercialización de servicios turísticos a nivel global.
   
         .row.align-items-center
           .col-lg-auto.d-none.d-lg-block
             figure
-              img(src="@/assets/curso/tema1/img04.svg", style="max-width: 100px").mx-auto
+              img(src="@/assets/curso/tema1/img04.svg", style="max-width: 100px", alt="").mx-auto
           .col-lg
             p.mb-0(data-aos="fade-right") La Organización Mundial del Turismo (OMT, 2008) señala que el uso de tecnologías de información y comunicación en el turismo ha transformado la manera en que los usuarios acceden y adquieren servicios de alojamiento, aumentando la competitividad y el alcance de los establecimientos hoteleros.
 
@@ -53,13 +53,13 @@
     .container
       .titulo-con-imagen.mb-5(data-aos="fade-right")
         .titulo-con-imagen__fondo
-          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png")
+          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png", alt="")
           h3.titulo-con-imagen__texto Canales directos
 
     .row.align-items-center.mb-5
       .col-lg-auto.d-none.d-lg-block
         figure
-          img(src="@/assets/curso/tema1/img05.svg", style="max-width: 90px").mx-auto
+          img(src="@/assets/curso/tema1/img05.svg", style="max-width: 90px", alt="").mx-auto
       .col-lg
         p.mb-3 Son aquellos en los cuales el cliente realiza la reserva directamente con el hotel, sin intervención de terceros. Este tipo de canal favorece una comunicación más cercana con el huésped y permite al establecimiento mantener mayor control sobre las tarifas, políticas y condiciones de venta.
         p.mb-0 A continuación, se describen cuáles son los canales de reserva directos más comunes: 
@@ -74,7 +74,7 @@
               
             .col-md-10.col-lg-5
               figure
-                img(src="@/assets/curso/tema1/img06.png", alt="Imagen de solicitud directa o personal").mx-auto
+                img(src="@/assets/curso/tema1/img06.png", alt="").mx-auto
 
           .row.justify-content-center.align-items-center.p-4.p-lg-3
             .col-lg-7.mb-4.mb-lg-0
@@ -83,7 +83,7 @@
               
             .col-md-10.col-lg-5
               figure
-                img(src="@/assets/curso/tema1/img07.png", alt="Imagen de reservas telefónicas").mx-auto
+                img(src="@/assets/curso/tema1/img07.png", alt="").mx-auto
 
           .row.justify-content-center.align-items-center.p-4.p-lg-3
             .col-lg-7.mb-4.mb-lg-0
@@ -92,7 +92,7 @@
               
             .col-md-10.col-lg-5
               figure
-                img(src="@/assets/curso/tema1/img08.png", alt="Imagen de correo electrónico").mx-auto
+                img(src="@/assets/curso/tema1/img08.png", alt="").mx-auto
 
           .row.justify-content-center.align-items-center.p-4.p-lg-3
             .col-lg-7.mb-4.mb-lg-0
@@ -101,7 +101,7 @@
               
             .col-md-10.col-lg-5
               figure
-                img(src="@/assets/curso/tema1/img09.png", alt="Imagen de página web").mx-auto
+                img(src="@/assets/curso/tema1/img09.png", alt="").mx-auto
 
           .row.justify-content-center.align-items-center.p-4.p-lg-3
             .col-lg-7.mb-4.mb-lg-0
@@ -110,7 +110,7 @@
               
             .col-md-10.col-lg-5
               figure
-                img(src="@/assets/curso/tema1/img10.png", alt="Imagen de mensajería y chatbots").mx-auto
+                img(src="@/assets/curso/tema1/img10.png", alt="").mx-auto
 
           .row.justify-content-center.align-items-center.p-4.p-lg-3
             .col-lg-7.mb-4.mb-lg-0
@@ -119,7 +119,7 @@
               
             .col-md-10.col-lg-5
               figure
-                img(src="@/assets/curso/tema1/img11.png", alt="Imagen de redes sociales").mx-auto
+                img(src="@/assets/curso/tema1/img11.png", alt="").mx-auto
 
           .row.justify-content-center.align-items-center.p-4.p-lg-3
             .col-lg-7.mb-4.mb-lg-0
@@ -128,13 +128,13 @@
               
             .col-md-10.col-lg-5
               figure
-                img(src="@/assets/curso/tema1/img12.png", alt="Imagen de centrales de reservas").mx-auto
+                img(src="@/assets/curso/tema1/img12.png", alt="").mx-auto
 
 
     .container
       .titulo-con-imagen.mb-5(data-aos="fade-right")
         .titulo-con-imagen__fondo
-          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png")
+          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png", alt="")
           h3.titulo-con-imagen__texto Canales Indirectos
 
     .row.mb-5
@@ -145,7 +145,7 @@
     .row.mb-5.justify-content-center.align-items-center
       .col-md-8.col-lg-4.mb-4.mb-lg-0.order-lg-2
         figure
-          img(src="@/assets/curso/tema1/img13.png", data-aos="zoom-in").mx-auto
+          img(src="@/assets/curso/tema1/img13.png", data-aos="zoom-in", alt="").mx-auto
       .col-lg-8.order-lg-1
         TabsA.color-acento-botones()
           .tarjeta.color-acento-botones--borde.p-4.align-content-center(titulo="Agencias de viajes tradicionales")
@@ -197,7 +197,6 @@
           span Cuadro comparativo: ventajas y desventajas de los canales de reserva
         .tabla-a.color-acento-contenido 
           table
-            caption <span style="font-weight: normal">Nota. SENA, (2026).</span>
             thead
               tr
                 th Aspecto
@@ -274,56 +273,56 @@
           .tarjeta.bg-fondo-4.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/curso/tema1/img22.svg' alt='Imagen de reserva confirmada', style="width: 100px;").mx-auto
+                img(src='@/assets/curso/tema1/img22.svg' alt='', style="width: 100px;").mx-auto
             h4.text-center #[b Reserva confirmada (no garantizada)]
             p.text-center El hotel confirma la disponibilidad de la habitación sin exigir pago anticipado o garantía económica. La reserva se mantiene hasta una hora límite de llegada establecida por el hotel.
 
           .tarjeta.bg-fondo-4.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/curso/tema1/img23.svg' alt='Imagen de reserva garantizada', style="width: 100px;").mx-auto
+                img(src='@/assets/curso/tema1/img23.svg' alt='', style="width: 100px;").mx-auto
             h4.text-center #[b Reserva garantizada]
             p.text-center Es una reserva respaldada mediante tarjeta de crédito, depósito o pago anticipado. Garantiza la disponibilidad de la habitación durante toda la fecha acordada.
 
           .tarjeta.bg-fondo-4.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/curso/tema1/img24.svg' alt='Imagen de reserva provisional', style="width: 100px;").mx-auto
+                img(src='@/assets/curso/tema1/img24.svg' alt='', style="width: 100px;").mx-auto
             h4.text-center #[b Reserva provisional (tentativa)]
             p.text-center Corresponde a una reserva pendiente de confirmación definitiva. Se mantiene por un tiempo determinado mientras el cliente confirma o realiza el pago.
 
           .tarjeta.bg-fondo-4.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/curso/tema1/img25.svg' alt='Imagen de reserva en lista de espera', style="width: 100px;").mx-auto
+                img(src='@/assets/curso/tema1/img25.svg' alt='', style="width: 100px;").mx-auto
             h4.text-center #[b Reserva en lista de espera]
             p.text-center Se registra cuando no hay disponibilidad inmediata, pero el cliente queda pendiente ante posibles cancelaciones o cambios de otros huéspedes.
 
           .tarjeta.bg-fondo-4.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/curso/tema1/img26.svg' alt='Imagen de reserva V.I.P.', style="width: 100px;").mx-auto
+                img(src='@/assets/curso/tema1/img26.svg' alt='', style="width: 100px;").mx-auto
             h4.text-center #[b Reservas V.I.P.]
             p.text-center Son reservas realizadas para huéspedes de alta importancia para el hotel, quienes reciben atención preferencial y servicios personalizados.
 
           .tarjeta.bg-fondo-4.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/curso/tema1/img27.svg' alt='Imagen de reservas de grupos', style="width: 100px;").mx-auto
+                img(src='@/assets/curso/tema1/img27.svg' alt='', style="width: 100px;").mx-auto
             h4.text-center #[b Reservas de grupos]
             p.text-center Incluyen varias habitaciones para empresas, agencias, eventos o grupos turísticos. Requieren coordinación especial de servicios y logística.
 
           .tarjeta.bg-fondo-4.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/curso/tema1/img28.svg' alt='Imagen de reservas anuladas o canceladas', style="width: 100px;").mx-auto
+                img(src='@/assets/curso/tema1/img28.svg' alt='', style="width: 100px;").mx-auto
             h4.text-center #[b Reservas anuladas o canceladas]
             p.text-center Son reservas suspendidas antes de la llegada del huésped, ya sea por decisión del cliente o del establecimiento, según políticas definidas.
 
           .tarjeta.bg-fondo-4.p-4.h-100
             .row.justify-content-center.mb-3
               .col-8
-                img(src='@/assets/curso/tema1/img29.svg' alt='Imagen de reservas con cupo o allotment', style="width: 100px;").mx-auto
+                img(src='@/assets/curso/tema1/img29.svg' alt='', style="width: 100px;").mx-auto
             h4.text-center <b>Reservas con cupo o <em>allotment</em></b>
             p.text-center Consisten en habitaciones bloqueadas previamente para agencias o empresas durante un periodo determinado para su comercialización.
 
@@ -336,7 +335,7 @@
         .bg-fondo-5.px-lg-5.py-lg-4.px-4.py-3.br-15
           .row.align-items-center
             .col-lg-auto.d-none.d-lg-flex
-              img(src="@/assets/curso/tema1/img30.svg").mx-auto
+              img(src="@/assets/curso/tema1/img30.svg", alt="").mx-auto
             .col-lg
               p.mb-0 Cada tipo de reserva implica condiciones específicas relacionadas con disponibilidad, garantías, políticas y niveles de servicio, por lo que su correcta identificación facilita el control de la ocupación y mejora la gestión operativa del área de reservas. En este sentido, el conocimiento de las diferentes modalidades de reserva constituye una competencia fundamental para el personal encargado de la comercialización y administración de los servicios de alojamiento.
 
@@ -348,7 +347,7 @@
             .col-lg-10.col-md-12.mb-4.mb-lg-0
               .row.align-items-center.mb-0
                 .col-lg-auto.mb-4.mb-lg-0
-                  img(src="@/assets/curso/tema1/img06.svg", style="max-width: 100px;").mx-auto
+                  img(src="@/assets/curso/tema1/img06.svg", style="max-width: 100px;", alt="").mx-auto
                 .col-lg
                   p.mb-0 Para profundizar en los diferentes tipos de reservas hoteleras, lo invitamos a consultar el siguiente video:
             .col-lg-2.col-md-12(style="text-align: center !important;")
@@ -365,12 +364,12 @@
         .col-lg-7.p-4.order-2.order-lg-1
           p.mb-0 La codificación de reservas corresponde al conjunto de códigos, siglas y convenciones utilizados en los sistemas de gestión hotelera para registrar, identificar y controlar la información relacionada con las reservaciones. Debido al alto volumen de operaciones que manejan los establecimientos de alojamiento y al uso de plataformas tecnológicas como los PMS <em>(Property Management System)</em>, resulta necesario emplear códigos estandarizados que permitan agilizar los procesos operativos, facilitar la comunicación interna y reducir errores en la gestión de la información.
         .col-lg-5.p-0.order-1.order-lg-2
-          img(src="@/assets/curso/tema1/img32.png")
+          img(src="@/assets/curso/tema1/img32.png", alt="")
 
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-2.mb-3.mb-lg-0.col-md-8
         figure
-          img(src="@/assets/curso/tema1/img33.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema1/img33.png", data-aos="zoom-in", alt="")
       .col-lg-10
         p.mb-0(data-aos="fade-right") Generalmente, estos códigos son alfanuméricos y representan estados, condiciones o características específicas de la reserva. Su utilización permite identificar rápidamente aspectos como el estado de confirmación, el tipo de garantía, las listas de espera o las cancelaciones. Según Kasavana y Cahill (2017), la estandarización de códigos y convenciones facilita la operación hotelera y mejora la precisión en la administración de reservas y ocupación.
 
@@ -378,13 +377,13 @@
     .container
       .titulo-con-imagen.mb-5(data-aos="fade-right")
         .titulo-con-imagen__fondo
-          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png")
+          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png", alt="")
           h3.titulo-con-imagen__texto Códigos más utilizados en reservas hoteleras
 
     .row.align-items-center.mb-5
       .col-lg-auto.d-none.d-lg-block
         figure
-          img(src="@/assets/curso/tema1/img34.svg", style="max-width: 90px").mx-auto
+          img(src="@/assets/curso/tema1/img34.svg", style="max-width: 90px", alt="").mx-auto
       .col-lg-11
         p.mb-0(data-aos="fade-right") En hotelería existen códigos de uso frecuente que permiten identificar el estado o condición de una reserva dentro del sistema. Estos códigos son ampliamente utilizados por hoteles, agencias de viajes y operadores turísticos.
     
@@ -396,7 +395,6 @@
           span Códigos básicos de reservas hoteleras
         .tabla-a.color-acento-contenido 
           table
-            caption <span style="font-weight: normal">Nota. SENA, (2026).</span>
             thead
               tr
                 th Código
@@ -451,14 +449,14 @@
     .container
       .titulo-con-imagen.mb-5(data-aos="fade-right")
         .titulo-con-imagen__fondo
-          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png")
+          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png", alt="")
           h3.titulo-con-imagen__texto Importancia de la codificación en hotelería
 
 
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-3.mb-4.mb-lg-0.col-md-8
         figure
-          img(src="@/assets/curso/tema1/img35.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema1/img35.png", data-aos="zoom-in", alt="")
       .col-lg-9.col-md-12
         p.mb-3(data-aos="fade-right") El uso de códigos permite agilizar la operación del área de reservas y mejorar la interpretación de la información dentro del sistema hotelero. Gracias a estas convenciones, el personal puede identificar rápidamente el estado de una reserva y tomar decisiones relacionadas con disponibilidad, tarifas, confirmaciones o cancelaciones.
         p.mb-0 Por ejemplo, cuando el sistema registra una reserva con código <em>“NS”</em>, el personal identifica inmediatamente que el huésped no se presentó, permitiendo liberar la habitación o aplicar las políticas correspondientes. De igual forma, los códigos <em>“WAIT”</em> o <em>“TEN”</em> facilitan el control de solicitudes pendientes y reservas provisionales.
@@ -466,7 +464,7 @@
     .container
       .titulo-con-imagen.mb-5(data-aos="fade-right")
         .titulo-con-imagen__fondo
-          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png")
+          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png", alt="")
           h3.titulo-con-imagen__texto Convenciones y códigos complementarios en reservas
 
     .row.mb-5.justify-content-center.align-items-center
@@ -474,7 +472,7 @@
         p.mb-0(data-aos="fade-right") En los procesos de reservas hoteleras es frecuente la interacción con agencias de viajes, aerolíneas, operadores turísticos y plataformas internacionales de distribución, lo que hace necesario el uso de convenciones y sistemas de codificación que faciliten la comunicación y reduzcan errores en el manejo de la información. En este contexto, el personal del área de reservas debe familiarizarse con algunos códigos complementarios utilizados en la industria turística, especialmente aquellos relacionados con la identificación de destinos, aeropuertos y confirmaciones de servicio.
       .col-lg-2.mb-3.mb-lg-0.col-md-8
         figure
-          img(src="@/assets/curso/tema1/img36.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema1/img36.png", data-aos="zoom-in", alt="")
       .col-lg-10.col-md-12
         .bg-fondo-6.px-lg-5.py-lg-4.px-4.py-3.br-15
           p.mb-0 Uno de los recursos más utilizados es el alfabeto aeronáutico o alfabeto fonético internacional, implementado por la Organización de Aviación Civil Internacional (OACI) para mejorar la comunicación verbal en situaciones donde pueden presentarse interferencias o dificultades auditivas. Este sistema asigna una palabra específica a cada letra del abecedario, permitiendo deletrear nombres, códigos o referencias de manera clara y precisa. En hotelería, su aplicación resulta útil cuando el personal de reservas debe confirmar telefónicamente códigos de reserva, nombres de huéspedes o referencias alfanuméricas, evitando errores en el registro de la información.
@@ -483,7 +481,7 @@
       .container
         .row.justify-content-center.align-items-center
           .col-lg-3.col-md-8.mb-4.mb-lg-0
-            img(src='@/assets/curso/tema1/img39.png', alt='Alfabeto Aeronáutico').mx-auto
+            img(src='@/assets/curso/tema1/img39.png', alt='').mx-auto
           .col-lg-9.col-md-12
             SlyderF(columnas="col-lg-12 col-xl-12 col-md-12 col-sm-12")
               .tarjeta.bg-white.p-4.h-100
@@ -548,7 +546,7 @@
                     .br-15.text-center.align-content-center.mb-2(style="background-color: #F5ECE4; height: 50px;")
                       p.mb-0.text-bold Y - <em>Yankee</em>
                     .br-15.text-center.align-content-center.mb-2(style="background-color: #F5ECE4; height: 50px;")
-                      p.mb-0.text-bold Z - <em>Zulu</em>
+                      p.mb-0.text-bold Z - Zulu
 
               .tarjeta.bg-white.p-4.h-100
                 h4.mb-3 Ejemplo práctico
@@ -563,7 +561,7 @@
                       | Charlie
                     li 
                       i.lista-ul__vineta
-                      | Foxtrot
+                      | <em>Foxtrot</em>
                     li 
                       i.lista-ul__vineta
                       | Dos
@@ -578,7 +576,7 @@
     .container
       .titulo-con-imagen.mb-5(data-aos="fade-right")
         .titulo-con-imagen__fondo
-          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png")
+          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png", alt="")
           h3.titulo-con-imagen__texto Códigos internacionales de identificación
 
 
@@ -588,7 +586,7 @@
         .row.align-items-center.mb-0
           .col-lg-auto.d-none.d-lg-block
             figure
-              img(src="@/assets/curso/tema1/img40.svg", data-aos="zoom-in")
+              img(src="@/assets/curso/tema1/img40.svg", data-aos="zoom-in", alt="")
           .col-lg
             p.mb-0 Algunos ejemplos que se pueden observar en los aeropuertos son:
             ul.list-a.ms-0.ps-3
@@ -605,7 +603,7 @@
 
       .col-lg-3.mb-4.mb-lg-0.col-md-8.order-1.order-lg-2
         figure
-          img(src="@/assets/curso/tema1/img41.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema1/img41.png", data-aos="zoom-in", alt="")
 
     .row.justify-content-center.align-items-center
       .col-lg-12.col-md-12

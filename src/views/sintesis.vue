@@ -14,7 +14,7 @@
     
     .row.align-items-center.justify-content-center.mb-3(data-aos="fade-right")
       .col-lg-auto.d-none.d-lg-block
-        img(src="@/assets/curso/intro/img01.svg").mx-auto
+        img(src="@/assets/curso/intro/img01.svg", alt="").mx-auto
       .col-lg
         .bg-fondo-6.px-lg-5.py-lg-4.px-4.py-3.br-15
           .col-12.col-md-12.p-lg-3.p-0
@@ -28,7 +28,7 @@
       .col-auto
         a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
           .anexo__icono
-            img(src="@/assets/bullets/icono-pdf.svg")
+            img(src="@/assets/bullets/icono-pdf.svg", alt="")
           .anexo__texto
             p Anexo. Síntesis
 

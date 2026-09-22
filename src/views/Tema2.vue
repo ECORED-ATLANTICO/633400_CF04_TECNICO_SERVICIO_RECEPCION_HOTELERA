@@ -15,7 +15,7 @@
 
     .row.align-items-center.mb-5
       .col-lg-auto.d-none.d-lg-flex
-        img(src="@/assets/curso/tema2/img02.svg").mx-auto
+        img(src="@/assets/curso/tema2/img02.svg", alt="").mx-auto
       .col-lg
         p.mb-0 En este contexto, conceptos como <em>rooming list</em>, <em>waiting list</em>, <em>forecasting</em>, <em>overbooking</em> y <em>no show</em> forman parte de las herramientas fundamentales para la planificación y control de la operación hotelera. Su correcta interpretación y aplicación permite al personal anticiparse a situaciones que afectan la disponibilidad de habitaciones y mejorar la experiencia del huésped mediante una gestión organizada y eficiente de las reservas.
 
@@ -28,7 +28,7 @@
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-3.mb-3.mb-lg-0.col-md-8
         figure
-          img(src="@/assets/curso/tema2/img03.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema2/img03.png", data-aos="zoom-in", alt="")
       .col-lg-9
         p.mb-4(data-aos="fade-right") El <em>rooming list</em> es un documento utilizado principalmente en reservas grupales, donde se registra la información detallada de los huéspedes que harán parte de una reserva colectiva. Este listado es enviado generalmente por agencias de viajes, empresas u organizadores de eventos y contiene datos como nombres de los huéspedes, tipo de habitación, fechas de llegada y salida, requerimientos especiales y distribución de habitaciones.
 
@@ -41,7 +41,6 @@
           h5.text-bold Figura 1.
           span Reserva grupal o <em>rooming list</em> en <em>software</em> hotelero
         img(data-aos="fade-down", src="@/assets/curso/tema2/img05.png", alt="La figura 1 detalla una sección del formato utilizado en las reservas grupales o rooming list, en el cual se registran datos básicos de los huéspedes tales como, nombres, fecha de llegada y salida, tipo y número de habitaciones requeridas; para facilitar la logística  del hotel en la asignación de espacios, servicios y mejorra la atención al cliente.").mx-auto
-        figcaption Nota. ORACLE, (2026).
 
     .row.justify-content-center.mb-3
       .col-lg-12
@@ -66,7 +65,6 @@
           h5.text-bold Figura 2.
           span Lista de espera o <em>waiting list</em> en <em>software</em> hotelero
         img(data-aos="fade-down", src="@/assets/curso/tema2/img07.png", alt="La figura 2 presenta una sección de la waiting list o lista de espera, herramienta que permite al hotel registrar las solicitudes de clientes potenciales interesados en acceder a los servicios de alojamiento en caso de que se liberen cupos en las reservas existentes.").mx-auto
-        figcaption Nota. ORACLE, (2026).
 
     
       
@@ -86,7 +84,7 @@
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-3.mb-3.mb-lg-0.col-md-8
         figure
-          img(src="@/assets/curso/tema2/img08.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema2/img08.png", data-aos="zoom-in", alt="")
       .col-lg-9
         p.mb-3(data-aos="fade-right") El <em>forecasting</em> corresponde al pronóstico o estimación de ocupación hotelera basado en el análisis de reservas actuales, comportamiento histórico de la demanda, temporadas y tendencias del mercado. Esta herramienta permite anticipar niveles de ocupación y planificar estrategias comerciales y operativas.
         p.mb-0 Este proceso se basa en la analítica de datos que en esencia permite calcular para una fecha futura el estimado de la demanda, de esta forma el establecimiento hotelero puede determinar casi que con exactitud la ocupación que tendrá en una fecha futura.
@@ -98,7 +96,6 @@
           h5.text-bold Figura 3.
           span Análisis del pronóstico de ocupación en <em>software</em> hotelero
         img(data-aos="fade-down", src="@/assets/curso/tema2/img10.png", alt="La figura 3 registra el detalle de un panel de control hotelero con indicadores de ocupación, reservas, habitaciones disponibles, gráficos de distribución y estado de habitaciones que facilitan el análisis adecuado para el pronóstico de la ocupación del establecimiento hotelero.").mx-auto
-        figcaption Nota. SENA, (2026).
 
     .row.justify-content-center.align-items-center.mb-5
       .col-12.col-lg-7.col-md-12.mb-4.mb-lg-0
@@ -108,7 +105,6 @@
           span Variables utilizadas en el <em>forecasting</em>
         .tabla-a.color-acento-contenido 
           table
-            caption <span style="font-weight: normal">Nota. SENA, (2026).</span>
             thead
               tr
                 th.tabla3 Variable
@@ -133,7 +129,7 @@
       .col-lg-5.mb-0.mb-lg-0.col-md-12
         .row.justify-content-center.align-items-center.mb-0
           .col-lg-12.col-md-auto.mb-4.d-none.d-lg-flex
-            img(src="@/assets/curso/tema2/img09.svg", style="max-width: 100px")
+            img(src="@/assets/curso/tema2/img09.svg", style="max-width: 100px", alt="")
           .col-lg
             p.mb-0 El <em>forecasting</em> es fundamental para la toma de decisiones relacionadas con tarifas, promociones, personal operativo y disponibilidad de habitaciones. Según la Organización Mundial del Turismo (OMT, 2008), el análisis de datos y proyecciones de demanda constituye una práctica clave para la sostenibilidad y competitividad de los establecimientos turísticos.
         
@@ -150,12 +146,12 @@
         .col-lg-7.p-4.order-2.order-lg-1
           p.mb-0 El <em>overbooking</em> o sobreventa ocurre cuando el hotel vende más habitaciones de las realmente disponibles, anticipando cancelaciones o no presentaciones de huéspedes. Esta práctica se utiliza como estrategia para evitar pérdidas económicas derivadas de habitaciones vacías.
         .col-lg-5.p-0.order-1.order-lg-2
-          img(src="@/assets/curso/tema2/img11.png")
+          img(src="@/assets/curso/tema2/img11.png", alt="")
 
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-3.mb-3.mb-lg-0.col-md-8
         figure
-          img(src="@/assets/curso/tema2/img12.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema2/img12.png", data-aos="zoom-in", alt="")
       .col-lg-9
         p.mb-3(data-aos="fade-right") Aunque el <em>overbooking</em> puede contribuir a maximizar ingresos, también representa un riesgo operativo y de servicio si todos los huéspedes se presentan al mismo tiempo. En estos casos, el hotel debe aplicar protocolos de reubicación o compensación para evitar afectar la experiencia del cliente.
         p.mb-3 El manejo del <em>overbooking</em> requiere un análisis cuidadoso del comportamiento histórico de cancelaciones y <em>no show</em>, así como una adecuada coordinación operativa.
@@ -169,7 +165,6 @@
           span Ventajas y riesgos del <em>overbooking</em>
         .tabla-a.color-acento-contenido 
           table
-            caption <span style="font-weight: normal">Nota. SENA, (2016).</span>
             thead
               tr
                 th Aspecto
@@ -214,7 +209,7 @@
         .bg-fondo-10.px-lg-5.py-lg-4.px-4.py-3.br-15
           .row.align-items-center
             .col-lg-auto.d-none.d-lg-flex
-              img(src="@/assets/curso/tema2/img13.svg").mx-auto
+              img(src="@/assets/curso/tema2/img13.svg", alt="").mx-auto
             .col-lg
               p.mb-0 El <em>overbooking</em> es una estrategia utilizada en hotelería para optimizar la ocupación y maximizar los ingresos del establecimiento, especialmente en temporadas de alta demanda. Sin embargo, su implementación requiere un análisis cuidadoso de las tendencias de cancelación y <em>no show</em>, así como un control permanente de la disponibilidad. Una adecuada gestión del <em>overbooking</em> permite equilibrar rentabilidad y calidad del servicio, mientras que un manejo inadecuado puede afectar la experiencia del huésped y la imagen del hotel.
 
@@ -233,7 +228,7 @@
     
     .row.align-items-center.mb-5
       .col-lg-auto.d-none.d-lg-flex
-        img(src="@/assets/curso/tema2/img15.svg").mx-auto
+        img(src="@/assets/curso/tema2/img15.svg", alt="").mx-auto
       .col-lg
         p.mb-3 Para reducir el impacto del <em>no show</em>, muchos hoteles implementan políticas de garantía mediante tarjeta de crédito o cobro anticipado, aplicando penalizaciones cuando el cliente no cumple con la reserva confirmada.
         p.mb-0 El análisis de los índices de <em>no show</em> también resulta importante para el <em>forecasting</em> y la aplicación de estrategias de <em>overbooking</em>.

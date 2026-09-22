@@ -17,7 +17,7 @@
 
     .row.align-items-center.mb-5
       .col-lg-auto
-        img.d-none.d-lg-flex(src="@/assets/curso/tema3/img02.svg", data-aos="zoom-in").mx-auto
+        img.d-none.d-lg-flex(src="@/assets/curso/tema3/img02.svg", data-aos="zoom-in", alt="").mx-auto
       .col-lg
         p.mb-0(data-aos="fade-right") Dentro de estos procedimientos se encuentran actividades fundamentales como la confirmación, modificación, cancelación y anulación de reservas, las cuales hacen parte del ciclo operativo de la gestión hotelera. Cada uno de estos procesos requiere el cumplimiento de políticas, tiempos de respuesta y protocolos específicos que permiten garantizar claridad en la comunicación con el huésped y un adecuado control de la ocupación.
 
@@ -55,7 +55,7 @@
       .col-lg-4.col-md-6
         .row.align-items-center.justify-content-center
           .col-lg-auto.col-12.mb-4.mb-lg-3
-            img(src="@/assets/curso/tema3/img04.png", data-aos="zoom-in").mx-auto
+            img(src="@/assets/curso/tema3/img04.png", data-aos="zoom-in", alt="").mx-auto
           .col-lg
             p.mb-0(data-aos="fade-left") Una vez validada la información, el hotel genera un número o código de confirmación que sirve como soporte y referencia para el cliente y para el establecimiento.
 
@@ -64,14 +64,14 @@
     .container
       .titulo-con-imagen.mb-5(data-aos="fade-right")
         .titulo-con-imagen__fondo
-          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png")
+          img.titulo-con-imagen__imagen(src="@/assets/curso/img-subtitulo.png", alt="")
           h3.titulo-con-imagen__texto Etapas del proceso de confirmación
 
 
     .row.align-items-center.justify-content-center.mb-5(data-aos="fade-right")
       .col-md-6.col-lg-3.d-none.d-lg-flex
         figure
-          img(src="@/assets/curso/tema3/img05.png")
+          img(src="@/assets/curso/tema3/img05.png", alt="")
       .col-lg-9.mb-lg-0
         AcordionA(tipo="a" clase-tarjeta="tarjeta bg-color-23")
           div(titulo="Recepción de solicitud")
@@ -105,7 +105,7 @@
             p.mb-0 Antes de realizar cualquier modificación, el personal del área de reservas debe verificar nuevamente la disponibilidad y validar las condiciones tarifarias o políticas aplicables. Toda modificación debe quedar registrada en el sistema para evitar inconsistencias operativas y garantizar una correcta actualización de la información.
           .col-lg-4.col-md-6.order-1.order-lg-2.mb-4.mb-lg-0
             figure
-              img(src="@/assets/curso/tema3/img06.png", data-aos="zoom-in")
+              img(src="@/assets/curso/tema3/img06.png", data-aos="zoom-in", alt="")
       
       .col-lg-5.col-md-12.mb-4.mb-lg-0
         .bg-fondo-12.px-lg-5.py-lg-4.px-4.py-3.br-15(data-aos="fade-down")
@@ -134,7 +134,6 @@
           h5.text-bold Figura 4.
           span Modificación de reservas en <em>software</em> hotelero PMS
         img(data-aos="fade-down", src="@/assets/curso/tema3/img10.png", alt="La figura 4 detalla la interfaz del sistema PMS para la modificación de reservas hoteleras. El administrador visualiza la información del huésped y actualiza datos de la reserva, como fechas de estadía, número de noches y tipo de habitación, mientras el sistema calcula automáticamente los cambios en la tarifa y el valor total de la reserva.").mx-auto
-        figcaption Nota. SENA, (2026).
     
     
     .bg-full-width.bg-fondo-3.px-5.py-4.mb-3
@@ -235,7 +234,6 @@
           span Diferencia entre cancelación y anulación de una reserva
         .tabla-a.color-acento-contenido 
           table
-            caption <span style="font-weight: normal">Nota. SENA, (2026).</span>
             thead
               tr
                 th.tabla3 Cancelación
@@ -257,7 +255,7 @@
     .row.mb-0.justify-content-center.align-items-center
       .col-lg-2.mb-4.mb-lg-0.col-md-8
         figure
-          img(src="@/assets/curso/tema3/img16.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema3/img16.png", data-aos="zoom-in", alt="")
       .col-lg-10
         p.mb-0(data-aos="fade-right") Los procedimientos técnicos de reservas permiten garantizar el control y actualización permanente de la información relacionada con la ocupación hotelera y la atención al cliente. Procesos como confirmación, modificación, cancelación y anulación facilitan la organización operativa y contribuyen a mantener la disponibilidad real del establecimiento, optimizando la prestación del servicio. En este sentido, el dominio de estos procedimientos fortalece las competencias técnicas del personal del área de reservas y favorece una gestión eficiente, organizada y orientada a la satisfacción del huésped.
 

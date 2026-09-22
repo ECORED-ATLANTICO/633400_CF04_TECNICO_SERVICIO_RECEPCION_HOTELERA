@@ -16,7 +16,7 @@
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-auto
-        img.d-none.d-lg-flex(src="@/assets/curso/tema4/img02.svg", style="max-width: 90px").mx-auto
+        img.d-none.d-lg-flex(src="@/assets/curso/tema4/img02.svg", style="max-width: 90px", alt="").mx-auto
       .col-lg
         p.mb-0 En este contexto, el área de reservas debe aplicar procedimientos técnicos y administrativos que permitan brindar información clara y precisa sobre las condiciones del servicio, facilitando la toma de decisiones y reduciendo posibles inconsistencias operativas. Según Kotler, Bowen y Makens (2017), la transparencia en la comunicación de políticas y condiciones influye directamente en la percepción de calidad y confianza del cliente hacia el establecimiento hotelero.
 
@@ -30,7 +30,7 @@
       .bg-fondo-15.px-lg-5.py-lg-4.px-4.py-3.br-15(data-aos="fade-down")
         .row.align-items-center.justify-content-center
           .col-lg-auto.d-none.d-lg-flex
-            img(src="@/assets/curso/tema4/img04.svg")
+            img(src="@/assets/curso/tema4/img04.svg", alt="")
           .col-lg-11
             p.mb-0 El tratamiento de la reserva corresponde al conjunto de acciones y procedimientos realizados desde el momento en que el cliente solicita alojamiento hasta la finalización o cierre de la reservación. Este proceso implica registrar correctamente la información del huésped, verificar disponibilidad, aplicar tarifas y garantizar que las condiciones del servicio sean comunicadas de manera clara y oportuna.
             
@@ -87,7 +87,6 @@
           span Etapas básicas del tratamiento de una reserva
         .tabla-a.color-acento-contenido 
           table
-            caption <span style="font-weight: normal">Nota. SENA, (2026).</span>
             thead
               tr
                 th Etapa
@@ -118,7 +117,7 @@
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-3.col-md-8.mb-3.mb-lg-0
         figure
-          img(src="@/assets/curso/tema4/img07.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema4/img07.png", data-aos="zoom-in", alt="")
       .col-lg-9.col-md-12
 
         p.mb-3 Las condiciones de reserva corresponden a los términos específicos establecidos por el hotel para la prestación del servicio de alojamiento. Estas condiciones deben ser informadas al cliente antes de confirmar la reserva y pueden variar según el tipo de tarifa, canal de venta o categoría del servicio contratado.
@@ -128,42 +127,42 @@
           .col-xl-4.col-lg-4.col-md-6.col-sm-12.mb-3.mb-lg-3
             .tarjeta-avatar-b(data-aos="zoom-in").h-100
               .tarjeta-avatar-b__img
-                img(src='@/assets/curso/tema4/img08.svg' alt='AvatarTop')
+                img(src='@/assets/curso/tema4/img08.svg' alt='')
               .tarjeta.tarjeta--azul.align-content-center
                 .p-3
                   p.mb-0.text-bold Horarios de <em>check-in</em> y <em>check-out</em>.
           .col-xl-4.col-lg-4.col-md-6.col-sm-12.mb-3.mb-lg-3
             .tarjeta-avatar-b(data-aos="zoom-in").h-100
               .tarjeta-avatar-b__img
-                img(src='@/assets/curso/tema4/img08.svg' alt='AvatarTop')
+                img(src='@/assets/curso/tema4/img08.svg' alt='')
               .tarjeta.tarjeta--azul.align-content-center
                 .p-3
                   p.mb-0.text-bold Número máximo de huéspedes por habitación.
           .col-xl-4.col-lg-4.col-md-6.col-sm-12.mb-3.mb-lg-3
             .tarjeta-avatar-b(data-aos="zoom-in").h-100
               .tarjeta-avatar-b__img
-                img(src='@/assets/curso/tema4/img08.svg' alt='AvatarTop')
+                img(src='@/assets/curso/tema4/img08.svg' alt='')
               .tarjeta.tarjeta--azul.align-content-center
                 .p-3
                   p.mb-0.text-bold Restricciones para modificaciones.
           .col-xl-4.col-lg-4.col-md-6.col-sm-12.mb-3.mb-lg-3
             .tarjeta-avatar-b(data-aos="zoom-in").h-100
               .tarjeta-avatar-b__img
-                img(src='@/assets/curso/tema4/img08.svg' alt='AvatarTop')
+                img(src='@/assets/curso/tema4/img08.svg' alt='')
               .tarjeta.tarjeta--azul.align-content-center
                 .p-3
                   p.mb-0.text-bold Políticas de menores de edad.
           .col-xl-4.col-lg-4.col-md-6.col-sm-12.mb-3.mb-lg-3
             .tarjeta-avatar-b(data-aos="zoom-in").h-100
               .tarjeta-avatar-b__img
-                img(src='@/assets/curso/tema4/img08.svg' alt='AvatarTop')
+                img(src='@/assets/curso/tema4/img08.svg' alt='')
               .tarjeta.tarjeta--azul.align-content-center
                 .p-3
                   p.mb-0.text-bold Servicios incluidos y no incluidos.
           .col-xl-4.col-lg-4.col-md-6.col-sm-12.mb-3.mb-lg-3
             .tarjeta-avatar-b(data-aos="zoom-in").h-100
               .tarjeta-avatar-b__img
-                img(src='@/assets/curso/tema4/img08.svg' alt='AvatarTop')
+                img(src='@/assets/curso/tema4/img08.svg' alt='')
               .tarjeta.tarjeta--azul.align-content-center
                 .p-3
                   p.mb-0.text-bold Condiciones de pago.
@@ -189,7 +188,7 @@
         .bg-fondo-12.px-lg-5.py-lg-4.px-4.py-3.br-15(data-aos="fade-down")
           .row.align-items-center.justify-content-center
             .col-lg-auto.d-none.d-lg-flex
-              img(src="@/assets/curso/tema4/img09.svg", data-aos="zoom-in").mx-auto
+              img(src="@/assets/curso/tema4/img09.svg", data-aos="zoom-in", alt="").mx-auto
             .col-lg
               ul.lista-ul.mb-0  
                 li
@@ -214,7 +213,7 @@
       .col-lg-3.col-md-6
         .row.align-items-center
           .col-lg-auto.col-12.mb-3.mb-lg-3.d-none.d-lg-flex.d-md-flex
-            img(src="@/assets/curso/tema4/img10.svg", style="max-width: 100px;" data-aos="zoom-in")
+            img(src="@/assets/curso/tema4/img10.svg", style="max-width: 100px;", data-aos="zoom-in", alt="")
           .col-lg-12
             p.mb-0(data-aos="fade-left") La implementación de políticas claras y accesibles favorece la organización operativa y contribuye a reducir conflictos o reclamaciones por parte de los clientes.
 
@@ -239,7 +238,7 @@
     .row.mb-5.justify-content-center.align-items-center
       .col-lg-3.mb-3.mb-lg-0.col-md-8
         figure
-          img(src="@/assets/curso/tema4/img12.png", data-aos="zoom-in")
+          img(src="@/assets/curso/tema4/img12.png", data-aos="zoom-in", alt="")
       .col-lg-9
         p.mb-3(data-aos="fade-right") La garantía de reserva corresponde al mecanismo utilizado por el hotel para asegurar la disponibilidad de la habitación solicitada y reducir riesgos asociados a cancelaciones o no presentación del huésped. Generalmente, esta garantía se realiza mediante tarjeta de crédito, depósito anticipado, transferencia bancaria o convenios empresariales.
         p.mb-0 Cuando una reserva se encuentra garantizada, el hotel mantiene la habitación disponible para el cliente incluso fuera de los horarios habituales de llegada. Además, las garantías permiten aplicar políticas de cobro en casos de <em>no show</em> o cancelaciones fuera del tiempo permitido.
@@ -253,7 +252,6 @@
           span Tipos e importancia de la garantía de reserva
         .tabla-a.color-acento-contenido 
           table
-            caption <span style="font-weight: normal">Nota. SENA, (2026).</span>
             thead
               tr
                 th Tipo de garantía

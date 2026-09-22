@@ -17,7 +17,7 @@
         .col-lg-7.p-4.order-2.order-lg-1(data-aos="fade-right")
           p.mb-0 Asimismo, se fortalecen competencias relacionadas con la aplicación de procedimientos técnicos para la confirmación, modificación, cancelación y anulación de reservas, de acuerdo con las políticas del establecimiento. De esta manera, se promueve el uso adecuado de herramientas tecnológicas y procedimientos operativos orientados a optimizar los procesos de reservas y mejorar la atención al cliente en los servicios de alojamiento.
         .col-lg-5.p-0.order-1.order-lg-2
-          img(src="@/assets/curso/intro/img01.png")
+          img(src="@/assets/curso/intro/img01.png", alt="")
 
 
       
