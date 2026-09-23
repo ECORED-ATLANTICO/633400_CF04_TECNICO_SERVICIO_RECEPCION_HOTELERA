@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119.333" height="105.726" viewBox="0 0 119.333 105.726">
+  <g id="reproductor-de-video" transform="translate(0 -3.649)">
+    <path id="Trazado_1085492" data-name="Trazado 1085492" d="M110.179,109.371H9.14A9.14,9.14,0,0,1,0,100.231V12.793a9.14,9.14,0,0,1,9.14-9.14H110.179a9.14,9.14,0,0,1,9.14,9.14v87.438A9.14,9.14,0,0,1,110.179,109.371Z" transform="translate(0 0.004)" fill="#79b6ef"/>
+    <path id="Trazado_1085493" data-name="Trazado 1085493" d="M56.922,29.616,29.87,14a5.326,5.326,0,0,0-7.989,4.612V49.846a5.326,5.326,0,0,0,7.989,4.612L56.922,38.84a5.326,5.326,0,0,0,0-9.224Z" transform="translate(18.918 8.323)" fill="#f0f0fc"/>
+    <path id="Trazado_1085494" data-name="Trazado 1085494" d="M119.326,45.372V64.156a9.144,9.144,0,0,1-9.171,9.136H9.144A9.137,9.137,0,0,1,.008,64.156V45.372Z" transform="translate(0.007 36.073)" fill="#82828e"/>
+    <path id="Trazado_1085495" data-name="Trazado 1085495" d="M95.339,55.354H9.861a1.7,1.7,0,1,1,0-3.41H95.339a1.7,1.7,0,1,1,0,3.41Z" transform="translate(7.052 41.755)" fill="#3b3b44"/>
+    <circle id="Elipse_11472" data-name="Elipse 11472" cx="6.651" cy="6.651" r="6.651" transform="translate(23.08 88.754)" fill="#f0f0fc"/>
+    <path id="Trazado_1085496" data-name="Trazado 1085496" d="M87.348,12.785v87.443a9.144,9.144,0,0,1-9.171,9.136H37c8.83-8.489,24.273-26.659,28.3-53.966a91.915,91.915,0,0,0-7.6-51.75H78.177a9.144,9.144,0,0,1,9.17,9.136Z" transform="translate(31.985)" opacity="0.1"/>
+  </g>
+</svg>
