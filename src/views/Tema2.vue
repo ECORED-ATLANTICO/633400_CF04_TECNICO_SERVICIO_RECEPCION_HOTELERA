@@ -41,6 +41,7 @@
           h5.text-bold Figura 1.
           span Reserva grupal o <em>rooming list</em> en <em>software</em> hotelero
         img(data-aos="fade-down", src="@/assets/curso/tema2/img05.png", alt="La figura 1 detalla una sección del formato utilizado en las reservas grupales o rooming list, en el cual se registran datos básicos de los huéspedes tales como, nombres, fecha de llegada y salida, tipo y número de habitaciones requeridas; para facilitar la logística  del hotel en la asignación de espacios, servicios y mejorra la atención al cliente.").mx-auto
+        figcaption Nota. ORACLE, (2026).
 
     .row.justify-content-center.mb-3
       .col-lg-12
@@ -65,6 +66,7 @@
           h5.text-bold Figura 2.
           span Lista de espera o <em>waiting list</em> en <em>software</em> hotelero
         img(data-aos="fade-down", src="@/assets/curso/tema2/img07.png", alt="La figura 2 presenta una sección de la waiting list o lista de espera, herramienta que permite al hotel registrar las solicitudes de clientes potenciales interesados en acceder a los servicios de alojamiento en caso de que se liberen cupos en las reservas existentes.").mx-auto
+        figcaption Nota. ORACLE, (2026).
 
     
       
