@@ -588,7 +588,7 @@
             figure
               img(src="@/assets/curso/tema1/img40.svg", data-aos="zoom-in", alt="")
           .col-lg
-            p.mb-0 Algunos ejemplos que se pueden observar en los aeropuertos son:
+            p.mb-0 Algunos ejemplos que se encuentran en los aeropuertos son:
             ul.list-a.ms-0.ps-3
               li
                 i.lista-ul__vineta

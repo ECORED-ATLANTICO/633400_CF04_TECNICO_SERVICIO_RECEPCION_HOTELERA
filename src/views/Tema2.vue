@@ -26,15 +26,13 @@
       h2 2.1 <em>Rooming list</em>
 
     .row.mb-5.justify-content-center.align-items-center
-      .col-lg-3.mb-3.mb-lg-0.col-md-8
+      .col-lg-2.mb-3.mb-lg-0.col-md-8
         figure
           img(src="@/assets/curso/tema2/img03.png", data-aos="zoom-in", alt="")
-      .col-lg-9
+      .col-lg-10
         p.mb-4(data-aos="fade-right") El <em>rooming list</em> es un documento utilizado principalmente en reservas grupales, donde se registra la información detallada de los huéspedes que harán parte de una reserva colectiva. Este listado es enviado generalmente por agencias de viajes, empresas u organizadores de eventos y contiene datos como nombres de los huéspedes, tipo de habitación, fechas de llegada y salida, requerimientos especiales y distribución de habitaciones.
 
-        .bg-fondo-9.px-lg-5.py-lg-4.px-4.py-3.br-15
-          p.mb-0 La finalidad del <em>rooming list</em> es facilitar la organización operativa del hotel antes de la llegada del grupo, permitiendo coordinar procesos de <em>check-in</em>, asignación de habitaciones, alimentación y servicios complementarios. Además, este documento mejora la comunicación entre las áreas de reservas, recepción y <em>housekeeping</em>, optimizando la atención al cliente y reduciendo errores en la operación.
-
+        
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-12
         .titulo-sexto.color-acento-contenido.mb-4
@@ -45,8 +43,9 @@
 
     .row.justify-content-center.mb-3
       .col-lg-12
-        p.mb-0(data-aos="fade-down") La finalidad del <em>rooming list</em> es facilitar la organización operativa del hotel antes de la llegada del grupo, permitiendo coordinar procesos de <em>check-in</em>, asignación de habitaciones, alimentación y servicios complementarios. Además, este documento mejora la comunicación entre las áreas de reservas, recepción y <em>housekeeping</em>, optimizando la atención al cliente y reduciendo errores en la operación.
-        
+      .bg-fondo-9.px-lg-5.py-lg-4.px-4.py-3.br-15
+        p.mb-0 La finalidad del <em>rooming list</em> es facilitar la organización operativa del hotel antes de la llegada del grupo, permitiendo coordinar procesos de <em>check-in</em>, asignación de habitaciones, alimentación y servicios complementarios. Además, este documento mejora la comunicación entre las áreas de reservas, recepción y <em>housekeeping</em>, optimizando la atención al cliente y reduciendo errores en la operación.
+    
     separador
 
     #t_2_2.titulo-segundo.color-acento-contenido(data-aos="flip-up")
