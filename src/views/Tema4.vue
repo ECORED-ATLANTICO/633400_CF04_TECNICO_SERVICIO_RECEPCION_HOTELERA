@@ -264,15 +264,15 @@
                 td Permite asegurar la habitación y aplicar cobros en caso de <em>no show</em> o cancelación tardía.
               tr
                 td Depósito anticipado
-                td Pago parcial o total realizado antes de la llegada del huésped
+                td Pago parcial o total realizado antes de la llegada del huésped.
                 td Reduce riesgos financieros y garantiza compromiso del cliente con la reserva.
               tr
                 td Transferencia bancaria
-                td Garantía mediante consignación o pago electrónico
+                td Garantía mediante consignación o pago electrónico.
                 td Facilita la validación anticipada de pagos y mejora el control administrativo.
               tr
                 td Convenio empresarial
-                td Respaldo realizado por empresas, agencias o entidades aliadas
+                td Respaldo realizado por empresas, agencias o entidades aliadas.
                 td Favorece acuerdos comerciales y asegura reservas corporativas o grupales.
 
 </template>

@@ -70,7 +70,7 @@
           .row.justify-content-center.align-items-center.p-4.p-lg-3
             .col-lg-7.mb-4.mb-lg-0
               h4 Solicitud directa o personal
-              p.mb-0 Son las solicitudes que el hotel recibe de sus propios visitantes, esta clase de reservas deben ser motivadas por los recepcionistas y otros funcionarios del hotel, toda vez que son las más rentables.
+              p.mb-0 Corresponde a las solicitudes de reserva realizadas directamente por el cliente ante el establecimiento de alojamiento, sin intermediarios. Estas pueden gestionarse de manera presencial o mediante los canales de atención propios del establecimiento. El personal de recepción desempeña un papel importante en su promoción y gestión, ya que este tipo de reservas puede contribuir a reducir los costos de intermediación y fortalecer la relación directa con el cliente.
               
             .col-md-10.col-lg-5
               figure
@@ -258,73 +258,45 @@
     #t_1_4.titulo-segundo.color-acento-contenido(data-aos="flip-up")
       h2 1.4 Tipos de reservas hoteleras
 
-    .row.mb-5.justify-content-center.align-items-center
-      .col-lg-2.col-md-8.mb-3.mb-lg-0
+    .row.mb-2.justify-content-center.align-items-center
+      .col-lg-1.col-md-8.mb-3.mb-lg-0
         figure
-          img(src="@/assets/curso/tema1/img20.png", data-aos="zoom-in")
-      .col-lg-10
+          img(src="@/assets/curso/tema1/img44.png", data-aos="zoom-in").d-none.d-lg-block.mx-auto
+      .col-lg-11
         p.mb-3(data-aos="fade-right") Una reserva representa el inicio del acuerdo entre un hotel y una persona natural o jurídica, a partir del cual se establece el contrato de alojamiento. En este, el establecimiento se compromete a prestar el servicio bajo condiciones previamente definidas y el cliente a hacer uso del mismo en la fecha acordada, efectuando el pago correspondiente.
-        p.mb-3(data-aos="fade-right") Las reservas hoteleras pueden clasificarse según el tipo de servicio solicitado, el perfil del cliente o la forma de garantía, lo que facilita la gestión operativa y permite ajustar el servicio a las necesidades del huésped.
-        p.mb-0(data-aos="fade-right") Entre los tipos de reservas más comunes se encuentran:
+    .row.mb-5.justify-content-center.align-items-center
+      .col-lg-12 
+        p.mb-3(data-aos="fade-right") Las reservas hoteleras pueden clasificarse según sus condiciones de garantía, estado, disponibilidad, características del huésped, cantidad de habitaciones y modalidad de comercialización. Esta clasificación facilita su identificación, registro y seguimiento durante la gestión de reservas.
 
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-12
-        SlyderF(columnas="col-lg-4 col-xl-4 col-md-12 col-sm-12")
-          .tarjeta.bg-fondo-4.p-4.h-100
-            .row.justify-content-center.mb-3
-              .col-8
-                img(src='@/assets/curso/tema1/img22.svg' alt='', style="width: 100px;").mx-auto
-            h4.text-center #[b Reserva confirmada (no garantizada)]
-            p.text-center El hotel confirma la disponibilidad de la habitación sin exigir pago anticipado o garantía económica. La reserva se mantiene hasta una hora límite de llegada establecida por el hotel.
+    .row.mb-5.justify-content-center.align-items-center
+      .col-md-8.col-lg-4.mb-4.mb-lg-0.order-lg-2
+        figure
+          img(src="@/assets/curso/tema1/img43.png", data-aos="zoom-in", alt="").mx-auto
+      .col-lg-8.order-lg-1
+        TabsA.color-acento-botones()
+          .tarjeta.color-acento-botones--borde.p-4.align-content-center(titulo="Según la garantía")
+            p.mb-2 <b>Garantizada:</b> reserva respaldada por un medio de garantía aceptado por el establecimiento.
+            p.mb-0 <b>No garantizada:</b> reserva sin respaldo de garantía, sujeta a las condiciones de conservación establecidas por el alojamiento.
+         
+          .tarjeta.color-acento-botones--borde.p-4.align-content-center(titulo="Según el estado")
+            p.mb-2 <b>Provisional:</b> reserva pendiente de confirmación definitiva.
+            p.mb-2 <b>Confirmada:</b> reserva aceptada y registrada por el establecimiento.
+            p.mb-0 <b>Cancelada:</b> reserva anulada conforme a las condiciones aplicables.
 
-          .tarjeta.bg-fondo-4.p-4.h-100
-            .row.justify-content-center.mb-3
-              .col-8
-                img(src='@/assets/curso/tema1/img23.svg' alt='', style="width: 100px;").mx-auto
-            h4.text-center #[b Reserva garantizada]
-            p.text-center Es una reserva respaldada mediante tarjeta de crédito, depósito o pago anticipado. Garantiza la disponibilidad de la habitación durante toda la fecha acordada.
+          .tarjeta.color-acento-botones--borde.p-4.align-content-center(titulo="Según la disponibilidad")
+            p.mb-0 <b>Lista de espera (<em>waiting list</em>):</b> solicitud pendiente de asignación por falta de disponibilidad, que puede atenderse si se libera una habitación.
 
-          .tarjeta.bg-fondo-4.p-4.h-100
-            .row.justify-content-center.mb-3
-              .col-8
-                img(src='@/assets/curso/tema1/img24.svg' alt='', style="width: 100px;").mx-auto
-            h4.text-center #[b Reserva provisional (tentativa)]
-            p.text-center Corresponde a una reserva pendiente de confirmación definitiva. Se mantiene por un tiempo determinado mientras el cliente confirma o realiza el pago.
+          .tarjeta.color-acento-botones--borde.p-4.align-content-center(titulo="Según las características del huésped")
+            p.mb-0 <b>VIP (<em>Very Important Person</em>):</b> reserva asociada a un huésped que recibe atención diferenciada, según las políticas del establecimiento.
 
-          .tarjeta.bg-fondo-4.p-4.h-100
-            .row.justify-content-center.mb-3
-              .col-8
-                img(src='@/assets/curso/tema1/img25.svg' alt='', style="width: 100px;").mx-auto
-            h4.text-center #[b Reserva en lista de espera]
-            p.text-center Se registra cuando no hay disponibilidad inmediata, pero el cliente queda pendiente ante posibles cancelaciones o cambios de otros huéspedes.
+          .tarjeta.color-acento-botones--borde.p-4.align-content-center(titulo="Según la cantidad de habitaciones")
+            p.mb-2 <b>Individual:</b> reserva de una habitación, independientemente del número de ocupantes.
+            p.mb-0 <b>Grupal:</b>  reserva de varias habitaciones para un grupo, según los criterios del establecimiento.
 
-          .tarjeta.bg-fondo-4.p-4.h-100
-            .row.justify-content-center.mb-3
-              .col-8
-                img(src='@/assets/curso/tema1/img26.svg' alt='', style="width: 100px;").mx-auto
-            h4.text-center #[b Reservas V.I.P.]
-            p.text-center Son reservas realizadas para huéspedes de alta importancia para el hotel, quienes reciben atención preferencial y servicios personalizados.
+          .tarjeta.color-acento-botones--borde.p-4.align-content-center(titulo="Según la comercialización")
+            p.mb-0 <b>Reserva mediante <em>allotment</em>:</b> reserva gestionada con cargo a un cupo de habitaciones previamente acordado con un intermediario.
 
-          .tarjeta.bg-fondo-4.p-4.h-100
-            .row.justify-content-center.mb-3
-              .col-8
-                img(src='@/assets/curso/tema1/img27.svg' alt='', style="width: 100px;").mx-auto
-            h4.text-center #[b Reservas de grupos]
-            p.text-center Incluyen varias habitaciones para empresas, agencias, eventos o grupos turísticos. Requieren coordinación especial de servicios y logística.
-
-          .tarjeta.bg-fondo-4.p-4.h-100
-            .row.justify-content-center.mb-3
-              .col-8
-                img(src='@/assets/curso/tema1/img28.svg' alt='', style="width: 100px;").mx-auto
-            h4.text-center #[b Reservas anuladas o canceladas]
-            p.text-center Son reservas suspendidas antes de la llegada del huésped, ya sea por decisión del cliente o del establecimiento, según políticas definidas.
-
-          .tarjeta.bg-fondo-4.p-4.h-100
-            .row.justify-content-center.mb-3
-              .col-8
-                img(src='@/assets/curso/tema1/img29.svg' alt='', style="width: 100px;").mx-auto
-            h4.text-center <b>Reservas con cupo o <em>allotment</em></b>
-            p.text-center Consisten en habitaciones bloqueadas previamente para agencias o empresas durante un periodo determinado para su comercialización.
+          
 
     .row.mb-4.justify-content-center.align-items-center
       .col-lg-12
@@ -349,7 +321,7 @@
                 .col-lg-auto.mb-4.mb-lg-0
                   img(src="@/assets/curso/tema1/img06.svg", style="max-width: 100px;", alt="").mx-auto
                 .col-lg
-                  p.mb-0 Para profundizar en los diferentes tipos de reservas hoteleras, lo invitamos a consultar el siguiente video:
+                  p.mb-0 Para profundizar en los diferentes tipos de reservas hoteleras, lo invitamos a consultar el siguiente video que hace parte del Ecosistema SENA:
             .col-lg-2.col-md-12(style="text-align: center !important;")
               a.boton.color-acento-botones(href="https://youtu.be/WhV3jC4u880" target="_blank", style="text-align: center !important;")
                 span Ir al recurso
