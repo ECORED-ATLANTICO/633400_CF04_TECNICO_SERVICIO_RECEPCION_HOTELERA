@@ -323,7 +323,7 @@
                 .col-lg
                   p.mb-0 Para profundizar en los diferentes tipos de reservas hoteleras, lo invitamos a consultar el siguiente video que hace parte del Ecosistema SENA:
             .col-lg-2.col-md-12(style="text-align: center !important;")
-              a.boton.color-acento-botones(href="https://youtu.be/WhV3jC4u880" target="_blank", style="text-align: center !important;")
+              a.boton.color-acento-botones(href="https://youtu.be/sruLLWxORRU" target="_blank", style="text-align: center !important;")
                 span Ir al recurso
 
     separador
