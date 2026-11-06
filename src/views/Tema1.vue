@@ -316,15 +316,19 @@
       .col-lg-10
         .bg-color-1-degrade.p-3.mb-0.rounded-2.br-15.align-items-center
           .row.justify-content-center.align-items-center
-            .col-lg-10.col-md-12.mb-4.mb-lg-0
+            .col-lg-12.col-md-12.mb-4.mb-lg-0
               .row.align-items-center.mb-0
                 .col-lg-auto.mb-4.mb-lg-0
                   img(src="@/assets/curso/tema1/img06.svg", style="max-width: 100px;", alt="").mx-auto
                 .col-lg
                   p.mb-0 Para profundizar en los diferentes tipos de reservas hoteleras, lo invitamos a consultar el siguiente video que hace parte del Ecosistema SENA:
-            .col-lg-2.col-md-12(style="text-align: center !important;")
-              a.boton.color-acento-botones(href="https://youtu.be/sruLLWxORRU" target="_blank", style="text-align: center !important;")
-                span Ir al recurso
+            
+
+    .row.justify-content-center.mb-3
+      .col-12.col-lg-10.mb-3
+        figure.mb-3
+          .video.mb-2
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/sruLLWxORRU?si=0ps1Y6gtwTW91ZlV" title="Recepción de requerimientos de clientes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
     separador
     
